@@ -51,9 +51,3 @@ describe('insertion sort functionality', () => {
     }
   })
 })
-
-
-//negative numbers
-//positive numbers
-//odd array of mixed characters
-//sort large numbers
