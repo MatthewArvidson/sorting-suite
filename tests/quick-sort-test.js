@@ -51,12 +51,3 @@ describe('quick sort functionality', () => {
     }
   })
 })
-
-
-// negative numbers
-// positive numbers
-// array of mixed characters
-// sort large numbers
-// 50,000
-// 500,000
-// 1,000,000
