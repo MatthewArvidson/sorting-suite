@@ -1,7 +1,7 @@
 {
-  "name": "TDD",
+  "name": "@matthewarvidson/sorting-suite",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a collection of sorting algorithms",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -10,7 +10,7 @@
     "test": "mocha --compilers js:babel-core/register tests"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matthew Arvidson",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -20,8 +20,5 @@
     "chai": "^3.5.0",
     "mocha": "^3.4.2",
     "webpack": "^3.3.0"
-  },
-  "dependencies": {
-    "@letakeane/basic-sorts": "git+https://github.com/letakeane/basic-sorts.git"
   }
 }
