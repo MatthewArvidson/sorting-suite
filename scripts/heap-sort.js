@@ -1,3 +1,4 @@
+const arr = [];
 var lastIndex = arr.length - 1;
 
 const buildHeap = (arr, i) => {
@@ -5,10 +6,12 @@ const buildHeap = (arr, i) => {
   let rightChild = 2 * i + 2; 
   let parent = i;
 
-  if (leftChild < lastIndex && arr[leftChild] > arr[parent]){
-      parent = leftChild;
+  if (leftChild < lastIndex && // is leftChild aka 1 less than lastIndex aka 5 = true
+     arr[leftChild] > arr[parent]){ // is value of arrayIndex of leftChild aka 9 greater than parent aka 3 = true
+      parent = leftChild; // both conditions are satisfied so now parent is reassigned to leftChild aka index 0 swaps with index 1
   }
-  if (rightChild < lastIndex && arr[rightChild] > arr[parent]){
+  if (rightChild < lastIndex && // is rightChild aka 
+     arr[rightChild] > arr[parent]){
       parent = rightChild;
   }
     
@@ -17,28 +20,29 @@ const buildHeap = (arr, i) => {
 
     arr[i] = arr[parent];
     arr[parent] = temp;
-    heapSort(arr, parent);
+    buildHeap(arr, parent);
   }
 }
 
-const sortHeap = arr => {
+const heapSort = (arr, i) => {
   lastIndex = arr.length;
 
   for(let i = Math.floor(lastIndex / 2); i >= 0; i--){
-    heapSort(arr, i);
+    buildHeap(arr, i);
   }
   
   for(let i = arr.length - 1; i > 0; i--){
+
     let temp = arr[0];
       arr[0] = arr[i];
       arr[i] = temp;
       
       lastIndex--;
-      heapSort(arr, 0);
+      buildHeap(arr, 0);
     }
     return arr;
 }
 
-sortHeap(arr);
+heapSort(arr);
 
 module.exports = heapSort;
