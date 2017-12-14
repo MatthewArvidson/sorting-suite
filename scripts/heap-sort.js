@@ -6,12 +6,10 @@ const buildHeap = (arr, i) => {
   let rightChild = 2 * i + 2; 
   let parent = i;
 
-  if (leftChild < lastIndex && // is leftChild aka 1 less than lastIndex aka 5 = true
-     arr[leftChild] > arr[parent]){ // is value of arrayIndex of leftChild aka 9 greater than parent aka 3 = true
-      parent = leftChild; // both conditions are satisfied so now parent is reassigned to leftChild aka index 0 swaps with index 1
+  if (leftChild < lastIndex && arr[leftChild] > arr[parent]){
+      parent = leftChild; 
   }
-  if (rightChild < lastIndex && // is rightChild aka 
-     arr[rightChild] > arr[parent]){
+  if (rightChild < lastIndex && arr[rightChild] > arr[parent]){
       parent = rightChild;
   }
     
