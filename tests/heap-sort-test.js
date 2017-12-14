@@ -24,7 +24,7 @@ describe('heap sort functionality', () => {
 
   it('should sort an array of 50,000 numbers', () => {
     let array = [];
-    for (let i = 0; i < 50000; i++) {
+    for (let i = 0; i < 1000000; i++) {
       let randNum = Math.floor(Math.random() * 100000);
       array.push(randNum);
     }
@@ -36,7 +36,7 @@ describe('heap sort functionality', () => {
 
   it('should sort an array of 500,000 numbers', () => {
     let array = [];
-    for (let i = 0; i < 500000; i++) {
+    for (let i = 0; i < 1000000; i++) {
       let randNum = Math.floor(Math.random() * 1000000);
       array.push(randNum);
     }
@@ -50,6 +50,162 @@ describe('heap sort functionality', () => {
     let array = [];
     for (let i = 0; i < 1000000; i++) {
       let randNum = Math.floor(Math.random() * 10000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 2,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 20000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 3,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 30000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 4,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 40000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 5,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 50000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 10,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 100000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 15,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 150000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 20,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 200000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 30,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 300000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 40,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 400000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 50,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 500000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 100,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 1000000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 200,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 2000000000);
+      array.push(randNum);
+    }
+    let sortedArray = heapSort(array);
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      assert.equal(sortedArray[i] <= sortedArray[i+1], true)
+    }
+  })
+
+  it('should sort an array of 500,000,000 numbers', () => {
+    let array = [];
+    for (let i = 0; i < 1000000; i++) {
+      let randNum = Math.floor(Math.random() * 5000000000);
       array.push(randNum);
     }
     let sortedArray = heapSort(array);
