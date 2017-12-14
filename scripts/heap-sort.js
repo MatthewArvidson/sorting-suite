@@ -1,7 +1,6 @@
-let arr = [1,3,2,56,7]
-let lastIndex = arr.length - 1;
+var lastIndex = arr.length - 1;
 
-const heapSort = (arr, i) => {
+const buildHeap = (arr, i) => {
   let leftChild = 2 * i + 1;
   let rightChild = 2 * i + 2; 
   let parent = i;
@@ -40,4 +39,6 @@ const sortHeap = arr => {
     return arr;
 }
 
-sortHeap(arr)
+sortHeap(arr);
+
+module.exports = heapSort;
